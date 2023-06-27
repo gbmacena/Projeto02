@@ -7,8 +7,8 @@ body {
     margin: auto;
     background: url(Background.jpg) no-repeat top center / cover; 
     margin-top: 70px;
+    width: 100%;
     max-width: 580px;
-    height: 500px;
 
     
 
@@ -21,11 +21,12 @@ body {
 
   h1 {
     display: flex;
+    font-size: large;
     margin-bottom: 10px;
     color: black;
     background-color: blue;
     border: 1px rgba(0, 0, 0, 0.5) solid;
-    width: 450px;
+    width: 300px;
     text-align: center;
     height: 50px;
     justify-content: center  ;
@@ -38,7 +39,7 @@ body {
   label, input {
     display: block;
     margin-bottom: 10px;
-    color: white;
+    color: black;
     text-align: center;
   
     
@@ -66,12 +67,12 @@ body {
   #resultado {
     font-weight: bold;
     margin-top: 20px;
-    color: white;
+    color: black;
   }
 
 #resultado2{
     font-weight: bold;
-    color: white;
+    color: black;
 }
 
 
@@ -91,5 +92,5 @@ input{
 div{
     margin-top: 50px;
     text-align: center;
-    color: white;
+    color: black;
 }
