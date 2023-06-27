@@ -7,7 +7,7 @@ body {
     margin: auto;
     background: url(Background.jpg) no-repeat top center / cover; 
     margin-top: 70px;
-    width: 500px;
+    max-width: 580px;
     height: 500px;
 
     
