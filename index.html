@@ -3,29 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculadora de compras</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Calculadora de compras!</h1>
-
-  <div id="calculadora">
-    <label for="valor-input">Valor do produto:</label>
-    <input type="text" id="valor-input">
-    <br>
-
-    <label for="quantidade-input">Quantidade:</label>
-    <input type="number" id="quantidade-input">
-    <br>
-
-    <button id="calcular-btn">Calcular</button>
-
-    <p id="resultado"></p>
-    <p2 id="resultado2"></p2>
-
-    <div> Feito com ♥ por Gabriel Almeida  </div>
-
-  <script src="script.js"></script>
-    
+    <div class="container">
+        <header class="header">
+            
+        </header>
+        <section class="flex-content">
+            <div class="main-content">
+                <h1>CALCULADORA DE COMPRAS</h1>
+                <div class="card"> 
+                    <label for="price">Preço</label> <br>
+                    <input type="number" class="input" id="price" required>
+                </div>
+                <div class="card"> 
+                    <br><label for="quant">Quantidade</label><br>
+                    <input type="number" class="input" id="quant" required minlength="number1">
+                </div>
+                <div class="error-text" id="error-text"></div>
+                <div class="all-btn">
+                    <br><button type="submit" class="btn" id="btn">Calcular</button>
+                    <span class="new-button" id="new-button"></span>
+                </div>
+                    <div>
+                        <div id="sucessText"></div>
+                        <div class="all-results" id="all-results"></div>
+                    </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <p class="end">Feito por Gabriel Macena</p>
+        </footer>
+    </div>
+<script src="index.js"></script>
 </body>
 </html>
