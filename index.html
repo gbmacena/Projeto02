@@ -1,42 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <title>Calculadora de compras</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="container">
-        <header class="header">
-            
-        </header>
-        <section class="flex-content">
-            <div class="main-content">
-                <h1>CALCULADORA DE COMPRAS</h1>
-                <div class="card"> 
-                    <label for="price">Preço</label> <br>
-                    <input type="number" class="input" id="price" required>
-                </div>
-                <div class="card"> 
-                    <br><label for="quant">Quantidade</label><br>
-                    <input type="number" class="input" id="quant" required minlength="number1">
-                </div>
-                <div class="error-text" id="error-text"></div>
-                <div class="all-btn">
-                    <br><button type="submit" class="btn" id="btn">Calcular</button>
-                    <span class="new-button" id="new-button"></span>
-                </div>
-                    <div>
-                        <div id="sucessText"></div>
-                        <div class="all-results" id="all-results"></div>
-                    </div>
-            </div>
-        </section>
-        <footer class="footer">
-            <p class="end">Feito por Gabriel Macena</p>
-        </footer>
+      <section class="flex-content">
+        <div class="main-content">
+          <h1>CALCULADORA DE COMPRAS</h1>
+          <div class="card">
+            <label for="price">Preço</label> <br />
+            <input type="number" class="input" id="price" required />
+          </div>
+          <div class="card">
+            <br /><label for="quant">Quantidade</label><br />
+            <input
+              type="number"
+              class="input"
+              id="quant"
+              required
+              minlength="1"
+            />
+          </div>
+          <div class="error-text" id="error-text"></div>
+          <div class="all-btn">
+            <br /><button type="submit" class="btn" id="btn">Calcular</button>
+            <span class="new-button" id="new-button"></span>
+          </div>
+          <div>
+            <div id="sucessText"></div>
+            <div class="all-results" id="all-results"></div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <p class="end">Feito por Gabriel Macena</p>
+      </footer>
     </div>
-<script src="index.js"></script>
-</body>
+    <script src="index.js"></script>
+  </body>
 </html>
