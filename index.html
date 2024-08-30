@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main class="container">
+    <div class="container">
       <h1>Calculadora de compras</h1>
       <form>
         <label for="price">Preço</label>
@@ -25,15 +25,15 @@
         <span class="error-text" id="error-text"></span>
 
         <div class="btn-section">
-          <button type="submit" class="btn" id="btn">Calcular</button>
-          <span class="new-button" id="new-button"></span>
+          <button class="btn" id="btn">Calcular</button>
+          <button class="btn-clear" id="btn-clear">Limpar</button>
         </div>
         <div>
-          <span id="sucessText"></span>
-          <span class="all-results" id="all-results"></span>
+          <p class="results" id="results"></p>
         </div>
       </form>
-    </main>
+      <footer>Feito por Gabriel Macena</footer>
+    </div>
 
     <script src="index.js"></script>
   </body>

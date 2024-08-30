@@ -14,6 +14,7 @@
 }
 h1 {
   margin: 40px;
+  text-align: center;
 }
 form {
   width: 500px;
@@ -43,4 +44,39 @@ label {
   font-weight: 600;
   cursor: pointer;
   margin-top: 20px;
+}
+
+.btn-clear {
+  width: 100%;
+  padding: 10px;
+  background-color: #d11507;
+  border: none;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 20px;
+  visibility: hidden;
+}
+.error-text {
+  text-align: center;
+  font-weight: bold;
+}
+
+#results {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+  text-decoration: dashed;
+}
+
+footer {
+  position: absolute;
+  top: 97vh;
+  font-size: 14px;
+}
+
+@media (max-width: 540px) {
+  form {
+    width: 280px;
+  }
 }
