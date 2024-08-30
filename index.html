@@ -13,39 +13,28 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <section class="flex-content">
-        <div class="main-content">
-          <h1>CALCULADORA DE COMPRAS</h1>
-          <div class="card">
-            <label for="price">Preço</label> <br />
-            <input type="number" class="input" id="price" required />
-          </div>
-          <div class="card">
-            <br /><label for="quant">Quantidade</label><br />
-            <input
-              type="number"
-              class="input"
-              id="quant"
-              required
-              minlength="1"
-            />
-          </div>
-          <div class="error-text" id="error-text"></div>
-          <div class="all-btn">
-            <br /><button type="submit" class="btn" id="btn">Calcular</button>
-            <span class="new-button" id="new-button"></span>
-          </div>
-          <div>
-            <div id="sucessText"></div>
-            <div class="all-results" id="all-results"></div>
-          </div>
+    <main class="container">
+      <h1>Calculadora de compras</h1>
+      <form>
+        <label for="price">Preço</label>
+        <input type="number" class="input" id="price" />
+
+        <label for="quant">Quantidade</label>
+        <input type="number" class="input" id="quant" />
+
+        <span class="error-text" id="error-text"></span>
+
+        <div class="btn-section">
+          <button type="submit" class="btn" id="btn">Calcular</button>
+          <span class="new-button" id="new-button"></span>
         </div>
-      </section>
-      <footer class="footer">
-        <p class="end">Feito por Gabriel Macena</p>
-      </footer>
-    </div>
+        <div>
+          <span id="sucessText"></span>
+          <span class="all-results" id="all-results"></span>
+        </div>
+      </form>
+    </main>
+
     <script src="index.js"></script>
   </body>
 </html>
